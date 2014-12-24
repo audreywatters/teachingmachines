@@ -3,9 +3,9 @@ markdown: redcarpet
 highlighter: pygments
 
 # Site settings
-title: "Hack Education"
+title: "Teaching Machines"
 description: > # this means to ignore newlines until "email:"
-   The History of the Future of Education Technology
+   The Drive to Automate Education
 
 email: mail@audreywatters.com
 #blog logo
