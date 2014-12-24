@@ -1,377 +1,100 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head profile="http://gmpg.org/xfn/11">
-
-<title>Teaching Machines</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="robots" content="index, follow" />
-<meta name="google-site-verification" content="TYQWa8y1-HYt036S6Mdc_wQphOaNWZ3w95-TN1_rzjk" />
-
-<link rel="stylesheet" type="text/css" href="http://hackeducation.com/css/style.css" media="screen" />
-
-<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/hackeducation" />
-
-<style type="text/css">
-
-#logo .site-title, #logo .site-description { display:block; }
-body {background-repeat:no-repeat;background-position:top center;border-top:4px solid #000000;}
-#header {background-image:url(https://s3.amazonaws.com/hackedu/header_new.png);background-repeat:no-repeat;background-position:top center;margin-top:0px;margin-bottom:0px;padding-top:300px;padding-bottom:30px;border:3px solid #000;}
-#logo .site-title a {font:normal 40px/1em Georgia, serif;color:#222222}
-#logo .site-description {font:italic 14px/1em Georgia, serif;color:#999999}
-#logo .site-title a {font:normal 40px/1em Georgia, serif;color:#222222}
-#logo .site-description {font:italic 14px/1em Georgia, serif;color:#999999}
-body, p {font:normal 14px/1.5em Arial, sans-serif;color:#555555}
-h1 {font:normal 28px/1.5em Georgia, serif;color:#222222}h2 {font:normal 20px/1.5em Arial, sans-serif;color:#222222}h3 {font:normal 20px/1.5em Georgia, serif;color:#222222}h4 {font:normal 16px/1.5em Georgia, serif;color:#222222}h5 {font:normal 14px/1.5em Georgia, serif;color:#222222}h6 {font:normal 12px/1.5em Georgia, serif;color:#222222}
-.post .title, .page .title, .post .title a:link, .post .title a:visited, .page .title a:link, .page .title a:visited {font:bold 24px/1.2em Arial, sans-serif;color:#222222}
-.post-meta, .post-meta .post-author a {font:normal 11px/1.2em "Trebuchet MS", Tahoma, sans-serif;color:#868686}
-.entry, .entry p{font:normal 14px/1.5em Arial, sans-serif;color:#555555}
-.post-more {font:normal 12px/1.5em Arial, sans-serif;color:#868686;border-top:4px solid #e6e6e6;border-bottom:1px solid #e6e6e6;}
-.nav-entries, .wp-pagenavi {border-top:1px solid #e6e6e6;border-bottom:4px solid #e6e6e6;}
-.nav-entries a, .wp-pagenavi a:link, .wp-pagenavi a:visited, .wp-pagenavi .current, .wp-pagenavi .on, .wp-pagenavi a:hover, .wp-pagenavi span.extend, .wp-pagenavi span.pages {font:italic 12px/1.5em Georgia, serif;color:#777777!important}
-.wp-pagenavi a:link, .wp-pagenavi a:visited, .wp-pagenavi span.extend, .wp-pagenavi span.pages, .wp-pagenavi span.current {color:#777777!important}
-.widget h3 {font:bold 14px/1.5em Arial, sans-serif;color:#555555;border-bottom:3px solid #e6e6e6;}
-.widget_recent_comments li, #twitter li { border-color: #e6e6e6;}
-.widget p, .widget .textwidget {font:normal 12px/1.5em Arial, sans-serif;color:#555555;}
-.widget {font:normal 12px/1.5em Arial, sans-serif;color:#555555;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;}
-#tabs .inside li a {font:bold 12px/1.5em Georgia, serif;color:#555555;}
-#tabs .inside li span.meta, #tabs ul.wooTabs li a {font:normal 11px/1.5em "Trebuchet MS", Tahoma, sans-serif;color:#777777;}
-.nav a, #navigation ul.rss a {font:normal 14px Arial, sans-serif;color:#555555}
-#navigation {border-top:1px solid #dbdbdb;border-bottom:4px solid #dbdbdb;border-left:0px solid #dbdbdb;border-right:0px solid #dbdbdb;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;}
-#footer, #footer p {font:italic 14px Georgia, serif;color:#777777}
-#footer {border-top:4px solid #dbdbdb;border-bottom:0px solid ;border-left:0px solid ;border-right:0px solid ;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;}
-.magazine #loopedSlider .content h2.title a {font:bold 24px/1em Arial, sans-serif;color:#ffffff;}
-.magazine #loopedSlider .content .excerpt p {font:normal 12px/1.5em Arial, sans-serif;color:#cccccc;}
-.business #loopedSlider .content h2.title a {font:bold 24px/1em Arial, sans-serif;color:#ffffff;}
-.business #loopedSlider .content p {font:normal 12px/1.5em Arial, sans-serif;color:#cccccc;}
-</style>
-
-<link rel="shortcut icon" href="https://s3.amazonaws.com/hackedu/hackedu.png"/>
-
-<!--JQuery-->
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-
-<!--Other JS-->
-<script type="text/javascript" src="http://hackeducation.com/jscripts/qtip.js"></script>
-<script type="text/javascript" src="http://hackeducation.com/jscripts/master.js"></script>
-
-</head>
-<body class="home blog two-col-left width-940 two-col-left-940">
-
-<div id="wrapper">
-	<div id="header" class="col-full">
-		<div id="logo">
-			
-			<a href="http://hackeducation.com" title=""></a>
-
-		</div><!-- /#logo -->
-
-	</div><!-- /#header -->
-	
-	<div id="navigation" class="col-full">
-
-		<ul id="main-nav" class="nav fl">
-			<li class="page_item page-item-2"><a href="http://teachingmachin.es" title="Home">Book</a></li>
-			<li class="page_item page-item-2"><a href="http://teachingmachin.es/chapters.html" title="Chapters">Chapters</a></li>
-			<li class="page_item page-item-2"><a href="http://teachingmachin.es/biblio.html" title="Bibliography">Bibliography</a></li>
-			<li class="page_item page-item-2"><a href="http://teachingmachin.es/quotations.html" title="Quotations">Quotations</a></li>
-		    <li class="page_item page-item-2"><a href="http://hackeducation.com" title="Blog">Blog</a></li>	
-			<li class="page_item page-item-2"><a href="http://audreywatters.com" title="About">About Audrey</a></li>
-			<li class="page_item page-item-2"><a href="http://hackeducation.com/support.php" title="Support">Support</a></li>
-		</ul>
-		
-		<ul class="rss fr">
-							<li class="sub-rss"><a href="http://feeds.feedburner.com/hackeducation">Subscribe to Hack Education RSS</a></li>
-							
-			
-		</ul>
-
-
-	</div><!-- /#navigation -->
-
-	<!-- #content Starts -->
-	<div id="content" class="col-full">
-
-		<div id="main-sidebar-container">
-
-			<!-- #main Starts -->
-			<div id="main">      
-                             
-			
-	<!-- Post Starts -->
-	
-	<div class="post-14311 post type-post status-publish format-standard hentry no-iste13">
-	
+---
+layout: default
+---
 <h2>Teaching Machines: The Drive to Automate Education </h2>
-<br />
+
 <p><strong>A (Partial) Bibliography</strong></p>
-<br />
+
 <p>Adam, Alison. 1998. <em>Artificial Knowing: Gender and the Thinking Machine</em>. London: Routledge.</p>
-<br />
+
 <p>Bloom, Benjamin. 1984. “The 2 Sigma Problem.” <em>Educational Researcher</em> 13 (6).</p>
-<br />
+
 <p>Bowen, William G. 2013. <em>Higher Education in the Digital Age</em>. Princeton University Press.</p>
-<br />
+
 <p>Bransford, John, Ann Brown, and Rodney Cocking. 2013. <em>How People Learn: Brain, Mind, Experience, and School</em>. Accessed July 3. http://www.nap.edu/catalog.php?record_id=6160.</p>
-<br />
+
 <p>Brynjolfsson, Erik, and Andrew McAfee. 2011. <em>Race Against The Machine: How the Digital Revolution Is Accelerating Innovation, Driving Productivity, and Irreversibly Transforming Employment and the Economy</em>. Digital Frontier Press.</p>
-<br />
+
 <p>Callahan, Raymond E. 1962. <em>Education and the Cult of Efficiency: a Study of the Social Forces That Have Shaped the Administration of the Public Schools</em>. Chicago. Univ. of Chicago Press.</p>
-<br />
+
 <p>Carey, Kevin. 2013. “MOOCs, Robots, and the Secret of Life.” <em>New America Foundation</em>, June 5. http://higheredwatch.newamerica.net/blogposts/2013/moocs_robots_and_the_secret_of_life&#8211;85293.</p>
-<br />
+
 <p>Chomsky, Noam. 1971. “The Case Against B. F. Skinner.” <em>The New York Review of Books</em>, December 30. http://www.chomsky.info/articles/19711230.htm.</p>
-<br />
+
 <p>Cohen, Julie. 2013. “What Privacy Is For.” <em>Harvard Law Review</em>. http://www.harvardlawreview.org/symposium/papers2012/cohen.pdf.</p>
-<br />
+
 <p>Cuban, Larry. 1986. <em>Teachers and Machines: The Classroom Use of Technology Since 1920</em>. New York: Teachers College Press.</p>
-<br />
+
 <p>———. 2001. <em>Oversold and Underused Computers in the Classroom</em>. Cambridge, Mass.: Harvard University Press.</p>
-<br />
+
 <p>Dyson, George. 1998. <em>Darwin Among the Machines: The Evolution of Global Intelligence</em>. Reading, MA: Perseus Books.</p>
-<br />
+
 <p>———. 2012. <em>Turing’s Cathedral: The Origins of the Digital Universe</em>.</p>
-<br />
+
 <p>Ellul, Jacques. 1967. <em>The Technological Society</em>. New York: Vintage Books.</p>
-<br />
+
 <p>Golumbia, David. 2009. <em>The Cultural Logic of Computation</em>. Cambridge, Mass.: Harvard University Press.</p>
-<br />
+
 <p>Gould, Stephen Jay. 1996. <em>The Mismeasure of Man</em>. New York: Norton.</p>
-<br />
+
 <p>Halevy, Alon, Peter Norvig, and Fernando Pereira. “The Unreasonable Effectiveness of Data.” http://www.csee.wvu.edu/<sub>gidoretto/courses/2011</sub>-fall-cp/reading/TheUnreasonable%20EffectivenessofData_IEEE_IS2009.pdf.</p>
-<br />
+
 <p>Haraway, Donna. 1991. “A Cyborg Manifesto: Science, Technology, and Socialist-Feminism in the Late Twentieth Century.” In <em>Simians, Cyborgs and Women: The Reinvention of Nature</em>, 149–81. New York: Routledge.</p>
-<br />
+
 <p>Hayles, Katherine. 1999. <em>How We Became Posthuman: Virtual Bodies in Cybernetics, Literature, and Informatics</em>. University of Chicago Press.</p>
-<br />
+
 <p>Katz, Yarden. 2012. “Noam Chomsky on Where Artificial Intelligence Went Wrong.” <em>The Atlantic</em>. http://www.theatlantic.com/technology/archive/2012/11/noam-chomsky-on-where-artificial-intelligence-went-wrong/261637/.</p>
-<br />
+
 <p>“Khan Academy: Machine Learning → Measurable Learning.” 2013. Derandomized. Accessed July 1. http://derandomized.com/post/51729670543/khan-academy-machine-learning-measurable-learning.</p>
-<br />
+
 <p>Khan, Salman. 2012. <em>The One World Schoolhouse Education Reimagined</em>. New York: Twelve. </p>
-<br />
+
 <p>Kolowich, Steve. 2014a. “Writing Instructor, Skeptical of Automated Grading, Pits Machine Vs. Machine.” <em>The Chronicle of Higher Education</em>, April 28. https://chronicle.com/article/article-content/146211/.</p>
-<br />
+
 <p>Kurzweil, Ray. 2006. <em>The Singularity Is Near: When Humans Transcend Biology</em>. New York: Penguin.</p>
-<br />
+
 <p>———. 2012. <em>How to Create a Mind: The Secret of Human Thought Revealed</em>. New York: Viking.</p>
-<br />
+
 <p>Lipsitz, Lawrence, editor. 1973. <em>Using Programmed Instruction</em>. Educational Technology.</p>
-<br />
+
 <p>Lumsdaine, A. A, editor. 1960. <em>Teaching Machines And Programmed Learning A Source Book</em>. National Education Association.</p>
-<br />
+
 <p>Marx, Leo. 2000. <em>The Machine in the Garden: Technology and the Pastoral Ideal in America</em>. New York: Oxford University Press.</p>
-<br />
+
 <p>McRae, Philip. 2013. “Rebirth of the Teaching Machine Through the Seduction of Data Analytics: This Time It’s Personal.” Accessed July 3. http://philmcrae.com/2/post/2013/04/rebirth-of-the-teaching-maching-through-the-seduction-of-data-analytics-this-time-its-personal1.html.</p>
-<br />
+
 <p>Minsky, Marvin. 2007. <em>The Emotion Machine: Commonsense Thinking, Artificial Intelligence, and the Future of the Human Mind</em>. New York: Simon &amp; Schuster.</p>
-<br />
+
 <p>———. “Steps Toward Artificial Intelligence.” http://web.media.mit.edu/<sub>minsky/papers/steps</sub>.html.</p>
-<br />
+
 <p>Morozov, Evgeny. 2013. <em>To Save Everything, Click Here: The Folly of Technological Solutionism</em>. New York: Public Affairs.</p>
-<br />
+
 <p>Moursund, Dave. 2006. Brief Introduction to Educational Implications of Artificial Intelligence. http://pages.uoregon.edu/moursund/Books/AIBook/AI.pdf.</p>
-<br />
+
 <p>Mumford, Lewis. 1967. <em>The Myth of the Machine. Technics and Human Development</em>. San Diego: Harcourt, Brace, Jovanovich.</p>
-<br />
+
 <p>Noble, David F. 2001. <em>Digital Diploma Mills: The Automation of Higher Education</em>. New York: Monthly Review Press.</p>
-<br />
+
 <p>Norvig, Peter. “On Chomsky and the Two Cultures of Statistical Learning.” http://norvig.com/chomsky.html.</p>
-<br />
+
 <p>Papert, Seymour. 1980. <em>Mindstorms: Children, Computers, and Powerful Ideas</em>. 2nd ed. Basic Books.</p>
-<br />
+
 <p>———. 1993. <em>The Children’s Machine: Rethinking School in the Age of the Computer</em>. New York: BasicBooks.</p>
-<br />
+
 <p>Perelman, Les. 2012. “Mass-market Writing Assessments as Bullshit.” In <em>Writing Assessment in the 21st Century: Essays in Honor of Edward M. White</em>. Hampton Press.</p>
-<br />
+
 <p>Postman, Neil. 1993. T<em>echnopoly: The Surrender of Culture to Technology</em>. New York: Vintage Books.</p>
-<br />
+
 <p>Schank, Roger. 1984. <em>The Cognitive Computer: On Language, Learning, and Artificial Intelligence</em>. Reading, Mass.: Addison-Wesley Pub. Co.</p>
-<br />
+
 <p>Shermis, Mark. “Automated Essay Scoring: Writing Assessment and Instruction.” http://mkzechner.net/AES_IEE09.pdf.</p>
-<br />
+
 <p>Skinner, BF. 1958. “Teaching Machines.” <em>Science</em> 128: 969–77. doi:10.1126/science.128.3330.969.</p>
-<br />
+
 <p>Turing, Alan. “Computing Machinery and Intelligence.” <em>Mind</em> 59: 433–60.</p>
-<br />
+
 <p>Weizenbaum, Joseph. 1966. “ELIZA &#8211; a Computer Program for the Study of Natural Language Communication Between Man and Machine.” <em>Commun. ACM</em> 9 (1): 36–45. doi:10.1145/365153.365168.</p>
-<br />
+
 <p>———. 1976. <em>Computer Power and Human Reason: From Judgment to Calculation</em>. San Francisco: W.H. Freeman.</p>
-<br />
+
 <p>Woolf, Beverly Park. 2010. <em>Building Intelligent Interactive Tutors: Student-centered Strategies for Revolutionizing E-learning</em>. 1st ed. Morgan Kaufmann.</p>
-<br />
-	</div>
-	
-	<!-- End Post -->
-
-
-			</div><!-- /#main -->
-
-			
-<div id="sidebar">
-
-	<div id="woo_blogauthorinfo-3" class="widget widget_woo_blogauthorinfo">
-	
-		<h3>Author</h3>
-		<span class="left">
-			<img src="https://s3.amazonaws.com/hackedu/audreywatters_75.jpg" align="left" />
-		</span>
-		<p><b>Audrey Watters</b> is an education writer, a recovering academic, a serial dropout, a rabble-rouser, and some days, ed-tech's Cassandra.</p>
-
-		<!-- Audrey's Social Sharing Buttons -->
-
-		<a href="mailto:mail@audreywatters.com"><img src="https://s3.amazonaws.com/hackedu/email24.png"></a>
-		<a href="http://twitter.com/audreywatters"><img src="https://s3.amazonaws.com/hackedu/twitter-224.png"></a>
-		<a rel="author" href="https://plus.google.com/108741250435676131889"><img src="https://ssl.gstatic.com/images/icons/gplus-32.png" width="24" height="24"></a>
-		<a href="http://www.youtube.com/user/audreywatters"><img src="https://s3.amazonaws.com/hackedu/youtube24.png"></a>
-		<a href="http://www.flickr.com/photos/surreal_badger"><img src="https://s3.amazonaws.com/hackedu/flickr24.png"></a>
-		<a href="https://github.com/audreywatters"><img src="https://s3.amazonaws.com/hackedu/github24.png"></a>
-		<a href="http://www.slideshare.net/audreywatters"><img src="https://s3.amazonaws.com/hackedu/slideshare24.png"></a>
-		<a href="http://audreywatters.tumblr.com"><img src="http://s3.amazonaws.com/hackedu/tumblr24.png"></a>
-
-		<!-- Audrey's Button END -->
-		
-	</div>
-	
-	<div id="text-10" class="widget widget_text">
-	
-	<h3>Recommended Reading</h3>			
-		
-		<div class="textwidget">
-		<img src="https://s3.amazonaws.com/audreywatters/book36px.png">
-		<br />
-			<ul>
-				<li><a href="http://hackeducation.com/2014/11/18/gender-and-ed-tech/">Men Explain Technology to Me: On Gender, Ed-Tech, and the Refusal to Be Silent</a>, November 18, 2014</li>
-				<li><a href="http://www.hackeducation.com/2014/11/16/from-open-to-justice/">From "Open" to Justice</a>, November 16, 2014</li>
-				<li><a href="http://hackeducation.com/2014/11/13/convivial-tools-in-an-age-of-surveillance/">Convivial Tools in an Age of Surveillance</a>, November 13, 2014</li>
-				<li><a href="http://hackeducation.com/2014/09/03/monsters-altc2014/">Ed-Tech's Monsters</a>, September 3, 2014</li>
-				<li><a href="http://hackeducation.com/2014/05/14/innovation-cnie-2014/">Against "Innovation"</a>, May 14, 2014</li>
-				<li><a href="http://hackeducation.com/2014/04/25/domain-of-ones-own-incubator-emory/">Beneath the Cobblestones... A Domain of One's Own</a>, April 25, 2014</li>
-				<li><a href="http://hackeducation.com/2013/10/17/student-data-is-the-new-oil/">Student Data is the New Oil: MOOCs, Metaphor, and Money</a>, October 17, 2013</li>
-				<li><a href="http://hackeducation.com/2013/10/15/minding-the-future-openva/">A Future With Only 10 Universities</a>, October 15, 2013</li>
-				<li><a href="http://hackeducation.com/2013/05/24/disruptive-innovation/">The Myth and Millennialism of "Disruptive Innovation"</a>, May 24, 2013</li>
-				<li><a href="http://hackeducation.com/2013/03/26/ed-tech-solutionism-morozov/">Click Here to Save Education: Evgeny Morozov and Ed-Tech Solutionism</a>, March 26, 2013</li>
-				<li><a href="http://hackeducation.com/2012/08/29/the-real-reason-i-dropped-out-of-a-phd-program/">The Real Reason I Dropped Out of a PhD Program</a>, August 29, 2012</li>
-				<li><a href="http://hackeducation.com/2012/03/17/what-every-techie-should-know-about-education/">"The Audrey Test": Or, What Should Every Techie Know About Education?</a>, March 17, 2012</li>
-				<li><a href="http://www.hackeducation.com/2011/10/28/codecademy-and-the-future-of-not-learning-to-code/">Codecademy and the Future of (Not) Learning to Code</a>, October 28, 2011</li>
-				<li><a href="http://www.hackeducation.com/2011/07/19/the-wrath-against-khan-why-some-educators-are-questioning-khan-academy/">The Wrath Against Khan:  Why Some Educators Are Questioning Khan Academy</a>, July 19, 2011</li>
-			</ul>
-		
-		</div>
-	
-	</div>
-	
-		<div id="text-10" class="widget widget_text">
-	
-		<h3>2014 Ed-Tech Trends</h3>			
-		
-		<div class="textwidget">
-			<img src="https://s3.amazonaws.com/audreywatters/trends.png">
-			<br />
-			<ul>
-				<li>Coming Soon</li>
-			</ul>
-		
-		</div>
-	
-	</div>
-	
-			<div id="text-10" class="widget widget_text">
-	
-		<h3>Previous Years' Trends</h3>			
-		
-		<div class="textwidget">
-			<img src="https://s3.amazonaws.com/audreywatters/trends.png">	
-			<br />
-			<ul>
-				<li><a href="http://hackeducation.com/2013/12/23/top-ed-tech-trends-2013/">Top Ed-Tech Trends of 2013</a></li>
-				<li><a href="http://hackeducation.com/2012/12/20/top-ed-tech-trends-of-2012/">Top Ed-Tech Trends of 2012</a></li>
-				<li><a href="http://hackeducation.com/2011/12/16/top-10-ed-tech-trends-of-2011/">Top Ed-Tech Trends of 2011</a></li>
-				<li><a href="http://www.hackeducation.com/2010/12/02/the-year-in-ed-tech/">Top Ed-Tech Trends of 2010</a></li>
-			</ul>
-		
-		</div>
-	
-	</div>
-	
-		<div id="text-8" class="widget widget_text">
-	
-		<h3>Comments</h3>			
-		<img src="https://s3.amazonaws.com/hackedu/comments36px.png"></a></p>
-		<p>The comments on this blog have been <a href="http://hackeducation.com/2013/05/16/the-comments-are-closed/">closed</a>. Have something to say in response to my writing? Feel free to chime in on other social media sites. Feel free to write your own blog.</a></p>
-		
-	</div>	
-		
-	<div id="text-8" class="widget widget_text">
-	
-		<h3>Newsletter</h3>			
-		<img src="https://s3.amazonaws.com/hackedu/newsletter36px.png"></a></p>
-		<!-- // Tiny Letter SUBSCRIBE CODE \\ -->
-		<a href="https://tinyletter.com/audreywatters">Subscribe</a> to the Hack Education newsletter
-		<!-- \\ Tiny Letter SUBSCRIBE CODE // -->
-		
-	</div>	
-	
-			<div id="text-8" class="widget widget_text">
-	
-		<h3>Support Hack Education</h3>			
-		
-		<div class="textwidget">
-			<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-			<input type="hidden" name="cmd" value="_s-xclick">
-			<input type="hidden" name="hosted_button_id" value="Q57GEWHYMZH88">
-			<input type="image" src="https://s3.amazonaws.com/hackedu/money.png" name="submit" alt="PayPal - The safer, easier way to pay online!">
-			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-			</form>
-			<p>This website is deliberately advertising-free. But the research and writing that I do here is my full-time work — again, deliberately so.  If you find my writing interesting or insightful, please consider a <a href="http://hackeducation.com/support.php">donation</a>.</p>		
-		</div>
-		
-	</div>	
-
-	<div id="text-9" class="widget widget_text">
-		
-		<h3>Search</h3>
-		<form action="/blog/search.php" method="post"><input type="text" name="SearchQuery" value"search" style="border: 1px solid #CCC;" size="35" value="" />&nbsp;&nbsp;<input type="submit" value="Search Blog" style="padding-right: 10px;" /></form>	
-	
-	</div>	
-	
-</div>
-
-	
-
-		</div><!-- /#main-sidebar-container -->         
-
-	</div><!-- /#content -->
-
-	<div id="footer" class="col-full">
-
-		<div id="copyright" class="col-left">
-			<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a></p>		
-		</div>
-		
-		<div id="credit" class="col-right">
-			<p>Didak 501 "Teaching Machine" in <em><a href="http://books.google.com/books?id=ldsDAAAAMBAJ&lpg=PA156&dq=Didak%20501%20popular%20mechanics&pg=PP1#v=onepage&q=Didak%20501%20popular%20mechanics&f=false">Popular Mechanics</a></em> (October 1961), Icons by <a href="http://thenounproject.com/">The Noun Project</a></p>		
-		</div>
-
-	</div><!-- /#footer  -->
-
-</div><!-- /#wrapper -->
-
-<!-- Start of Google Code -->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-12878826-2']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<!-- End of Google Code -->
-
-</body>
-</html>
