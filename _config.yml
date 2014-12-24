@@ -5,7 +5,7 @@ highlighter: pygments
 # Site settings
 title: "Teaching Machines"
 description: > # this means to ignore newlines until "email:"
-   The Drive to Automate Education
+   A Hack Education Project
 
 email: mail@audreywatters.com
 #blog logo
