@@ -1,6 +1,6 @@
 # Build settings
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
 
 # Site settings
 title: "Teaching Machines"
