@@ -12,14 +12,14 @@ email: mail@audreywatters.com
 logo: "/assets/images/new_hack_logo.jpg"
 logo2: "/assets/images/beless.png"
 # blog cover
-cover: "/assets/images/typewriter.png"
+cover: "/assets/images/pigeon.jpg"
 covercredits: "http://bryanmmathers.com/"
 
 name: 'Audrey Watters'
 author: 'Audrey Watters'
 author_image: "/assets/images/author.jpg"
 
-paginate:	5
+paginate:	10
 paginate_path: "/blog/page:num"
 permalink: /:categories/:year/:month/:day/:title 
 
