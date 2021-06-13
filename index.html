@@ -1,11 +1,83 @@
 ---
+title: Home
 layout: default
+description: Use the Argon Jekyll theme to build a landing page, blog or complete website.
+featured_image: /assets/img/social.jpg
 ---
-<p>&#8220;There must be an industrial revolution in education,&#8221; psychologist Sidney Pressey wrote in 1933, &#8220;in which educational science and the ingenuity of educational technology combine to modernize the grossly inefficient and clumsy procedures of conventional education.&#8221; We still hear claims like this today: ed-tech is poised to bring science and efficiency to schools. Teaching machines will individualize instruction, allowing students to move at their own pace through their lessons and freeing teachers from drudgery so she may focus, as Pressey argued, on more important work &#8220;developing in her pupils fine enthusiasms, clear thinking, and high ideals.&#8221; </p>
 
-<p><a href="http://teachingmachin.es/timeline.html"><img src="https://s3.amazonaws.com/hackedu/2017-06-25-screenshot.png"></a></p>
+<!--Replace this page with your landing page content -->
+{% if site.data.settings.home_settings.theme == "landing" %}
+  {% include home-sample.html %}
+  <div class="features-7 fullWidth contentWrapper">
+    <div class="container mb-2">
+    <div class="row">
+        <div class="col-md-8 text-center mx-auto">
+            <h3 class="display-2">Blog</h3>
+            <p class="lead pb-5">The latest posts from our blog</p>
+        </div>
+    </div>
+    
+    </div>
+  </div>
+  {% include blogsHome.html %}
+{% endif %}
 
-<p><em>Teaching Machines</em>, under contract with MIT Press, chronicles the history of this century-old belief that the automation of education is necessary (and is surely coming any day now). </p>
+{% if site.data.settings.home_settings.theme == "blog" %}
+  <!-- Or turn your homepage into just a blog -->
+  {% if site.data.settings.blog_settings.theme == "narrow" %}
+  <div class="page-header page-header-small bg-secondary fullWidth ">
+      <div class="container contentWrapper">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center pt-4">
+            <h2 class="display-2">Blog</h2>
+            <h2 class="lead pl-5 pr-5 pb-3 text-center">The latest posts from our blog</h2>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<p style="text-align: right; font-size:12px"><em>Pigeon image: <a href="http://bryanmmathers.com/">Bryan Mathers</a></em></p>
+      <section class="blog main-raised">
+          {% include blogsHome.html %}  
+      </section>
+          
+  {% endif %}
+
+  {% if site.data.settings.blog_settings.theme == "basic" %}
+  <div class="page-header page-header-small bg-secondary fullWidth ">
+      <div class="container contentWrapper">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center pt-4">
+            <h2 class="display-2">Blog</h2>
+            <h2 class="lead pl-5 pr-5 pb-3 text-center">The latest posts from our blog</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <section class="blog mt-5">
+          {% include blogsHome.html %}  
+      </section>
+          
+  {% endif %}
+
+  {% if site.data.settings.blog_settings.theme == "grid" %}
+  <div class="page-header page-header-small bg-secondary fullWidth ">
+      <div class="container contentWrapper">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center pt-4">
+            <h2 class="display-2">Blog</h2>
+            <h2 class="lead pl-5 pr-5 pb-3 text-center">The latest posts from our blog</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <section class="blog">
+          {% include blogsHome.html %}  
+      </section>
+          
+  {% endif %}
+
+{% endif %}
+
 
