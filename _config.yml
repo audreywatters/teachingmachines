@@ -3,7 +3,7 @@ markdown: kramdown
 highlighter: rouge
 
 # Site settings
-title: "Teaching Machines: The History of Personalized Learning"
+title: "Teaching Machines"
 description: > # this means to ignore newlines until "email:"
    MIT Press (2021)
 
