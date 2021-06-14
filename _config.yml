@@ -3,9 +3,9 @@ markdown: kramdown
 highlighter: rouge
 
 # Site settings
-title: "Teaching Machines"
+title: "Teaching Machines: The History of Personalized Learning"
 description: > # this means to ignore newlines until "email:"
-   MIT Press (2021)
+   Audrey Watters, (MIT Press 2021)
 
 email: mail@audreywatters.com
 #blog logo
