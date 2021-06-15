@@ -10,9 +10,9 @@ description: > # this means to ignore newlines until "email:"
 email: mail@audreywatters.com
 #blog logo
 logo: "/assets/images/susan.jpg"
-logo2: "/assets/images/susan.jpg"
+logo2: "/assets/images/beless.png"
 # blog cover
-cover: "/assets/images/autotutor.jpg"
+cover: "/assets/images/bg.jpg"
 
 name: 'Audrey Watters'
 author: 'Audrey Watters'
